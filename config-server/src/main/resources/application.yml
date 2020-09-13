@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+#          uri: ssh://localhost/config-repo
+          uri: E:\\workspace\\microservice\\client-server-cloud-config\\git-repo
+          clone-on-start: true
+#  security:
+#    user:
+#      name: root
+#      password: s3cr3t
+
